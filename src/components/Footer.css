@@ -1,0 +1,48 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #006400;
+    color: #a8d18d;
+    padding: 40px 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column p {
+    margin: 0 0 10px;
+  }
+  
+  .footer-column form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-column input {
+    padding: 8px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .footer-column button {
+    padding: 8px;
+    border: none;
+    background: #a8d18d;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .footer-column button:hover {
+    background: #8fbf72;
+  }
+  

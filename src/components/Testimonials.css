@@ -1,0 +1,37 @@
+.testimonials {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .marquee {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: marquee 15s linear infinite;
+  }
+  
+  .testimonial {
+    flex: 0 0 auto;
+    margin-right: 50px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

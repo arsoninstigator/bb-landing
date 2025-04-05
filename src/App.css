@@ -1,38 +1,207 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fce8cf;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fac6c7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Poppins";
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.logo img {
+  width: 20%
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #fac6c7;
+}
+
+.two-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px 20px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.two-column > div {
+  flex: 1;
+}
+
+.two-column img {
+  max-width: 40%;
+  height: 5%;
+  border-radius: 8px;
+}
+
+.two-column a {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.testimonials {
+  background-color: #a8d18d;
+  padding: 60px 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.testimonial-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.testimonial {
+  min-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cta {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.cta button {
+  background-color: #fac6c7;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #f8b2b4;
+}
+
+.footer {
+  background-color: #004d40;
+  color: #a8d18d;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+.footer div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #a8d18d;
+  text-decoration: underline;
+}
+
+.footer form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer input[type="email"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer button {
+  background-color: #a8d18d;
+  color: #004d40;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background-color: #92c781;
+}
+
+@media (max-width: 768px) {
+  .two-column {
+    flex-direction: column;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .two-column img {
+    width: 30%;
+    margin-top: 20px;
   }
+
+  .footer {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+video {
+  height: 54%;
+  object-fit: cover;
+  position: relative;
+  width: 54%;
+  z-index: 0;
 }
