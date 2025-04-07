@@ -3,14 +3,14 @@ import './Testimonials.css';
 
 function Testimonials() {
   const testimonials = [
-    "Snippetify saved me hours every week!",
-    "Love how easy it is to organize my code snippets.",
-    "A must-have tool for every developer.",
+    "Snippetify changed the way I work!",
+    "Fast, simple, and super useful.",
+    "A must-have for all students.",
   ];
 
   return (
     <div className="testimonials">
-      <h2>What Developers Say</h2>
+      <h2>what our users have been saying ..</h2>
       <div className="marquee">
         <div className="marquee-content">
           {testimonials.map((quote, index) => (

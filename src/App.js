@@ -15,22 +15,23 @@ function App() {
           <div className="dropdown">
             <button className="dropbtn">Features</button>
             <div className="dropdown-content">
-              <a href="#feature1">Easy Saving</a>
-              <a href="#feature2">Organized Snippets</a>
+              <a href="#feature1">easy-to-use</a>
+              <a href="#feature2">no login or special perms</a>
+              <a href="#feature3">edits saved upon refresh</a>
             </div>
           </div>
           <div className="dropdown">
-            <button className="dropbtn">About</button>
+            <button className="dropbtn">about</button>
             <div className="dropdown-content">
-              <a href="#mission">Our Mission</a>
-              <a href="#team">Team</a>
+              <a href="#mission">our mission</a>
+              <a href="#team">team</a>
             </div>
           </div>
           <div className="dropdown">
-            <button className="dropbtn">Support</button>
+            <button className="dropbtn">support</button>
             <div className="dropdown-content">
-              <a href="#faq">FAQ</a>
-              <a href="#contact">Contact Us</a>
+              <a href="#faq">faq</a>
+              <a href="#contact">contact us</a>
             </div>
           </div>
         </nav>
