@@ -84,7 +84,8 @@ function App() {
 
       <footer className="footer">
         <div>
-          <h4>this project was made for hack club's browser buddy and rpg v1 program :D</h4>
+          <h4>this project was made for hack club's <br /> 
+          browser buddy and rpg v1 program :D</h4>
           <p>123 Code Street<br />San Francisco, CA 94102</p>
         </div>
         <div>
